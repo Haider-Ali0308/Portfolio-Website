@@ -1,5 +1,4 @@
 import React from 'react';
-import profileImage from '../assets/profile-image.jpg';
 import { ArrowDown, Mail, Phone, MapPin } from 'lucide-react';
 
 const Hero = () => {
@@ -15,7 +14,7 @@ const Hero = () => {
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
-      
+
       {/* Animated Background Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute bottom-32 right-16 w-32 h-32 bg-teal-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
@@ -25,13 +24,15 @@ const Hero = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-1 animate-pulse">
-              <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center text-4xl font-bold text-white">
-                <img src={profileImage} alt="Haider Ali"/>
-              </div>
+            <div className="w-36 h-36 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-[2px] animate-pulse shadow-lg">
+              <img
+                src="/images/image-profile.jpg"
+                alt="profile"
+                className="w-full h-full object-cover rounded-full border-4 border-gray-800"
+              />
             </div>
-          </div>
 
+          </div>
           {/* Name and Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-teal-400 to-blue-400 bg-clip-text text-transparent animate-fade-in">
             Haider Ali
@@ -39,7 +40,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-gray-300 mb-6 animate-fade-in-delay">
             Mern Stack Web Developer
           </p>
-          
+
           {/* Contact Info */}
           <div className="flex flex-wrap justify-center gap-6 mb-8 text-gray-400">
             <div className="flex items-center gap-2">
