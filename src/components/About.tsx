@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Heart, Lightbulb, Users } from 'lucide-react';
 
 const About = () => {
