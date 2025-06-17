@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="w-36 h-36 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-[2px] animate-pulse shadow-lg">
               <img
-                src="/images/image-profile.jpg"
+                src="/images/image.jpg"
                 alt="profile"
                 className="w-full h-full object-cover rounded-full border-4 border-gray-800"
               />
